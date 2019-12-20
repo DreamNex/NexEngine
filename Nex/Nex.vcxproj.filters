@@ -4,6 +4,9 @@
     <Filter Include="Nex">
       <UniqueIdentifier>{300C880B-9C15-887C-2591-9E7C9199937C}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Nex\Events">
+      <UniqueIdentifier>{142250F0-00DA-913D-69E1-6A9955B82C2E}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Src\Nex.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="Src\Nex\EntryPoint.h">
       <Filter>Nex</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Nex\Events\ApplicationEvent.h">
+      <Filter>Nex\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Nex\Events\Event.h">
+      <Filter>Nex\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Nex\Events\KeyEvent.h">
+      <Filter>Nex\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Nex\Events\MouseEvent.h">
+      <Filter>Nex\Events</Filter>
     </ClInclude>
     <ClInclude Include="Src\Nex\Log.h">
       <Filter>Nex</Filter>

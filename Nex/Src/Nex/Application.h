@@ -1,5 +1,6 @@
 #pragma once
 #include "Core.h"
+#include "Events/Event.h"
 namespace Nex
 {
 	class NEX_API Application
