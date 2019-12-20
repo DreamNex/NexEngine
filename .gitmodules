@@ -1,0 +1,3 @@
+[submodule "Nex/vendor/spdlog"]
+	path = Nex/vendor/spdlog
+	url = https://github.com/gabime/spdlog
