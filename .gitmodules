@@ -5,3 +5,6 @@
 	path = Nex/vendor/GLFW
 	url = https://github.com/TheCherno/GLFW
 
+[submodule "Nex/vendor/imgui"]
+	path = Nex/vendor/imgui
+	url = https://github.com/TheCherno/imgui
