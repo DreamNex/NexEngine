@@ -12,6 +12,7 @@
 #include <unordered_set>
 
 #include "Nex/Log.h"
+
 #ifdef NX_PLATFORM_WINDOWS
 #include <Windows.h>
 #endif

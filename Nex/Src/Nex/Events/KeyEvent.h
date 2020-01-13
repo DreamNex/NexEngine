@@ -40,7 +40,7 @@ namespace Nex
 	class NEX_API KeyReleasedEvent : public KeyEvent
 	{
 	public:
-		KeyPressedEvent(int keycode)
+		KeyReleasedEvent(int keycode)
 			: KeyEvent(keycode){}
 
 		std::string ToString() const override
