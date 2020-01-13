@@ -14,9 +14,11 @@
 IncludeDir = {}
 IncludeDir["GLFW"] = "Nex/vendor/GLFW/include"
 IncludeDir["Glad"] = "Nex/vendor/Glad/include"
+IncludeDir["ImGui"] = "Nex/vendor/imgui"
 
 include "Nex/vendor/GLFW"
 include "Nex/vendor/Glad"
+include "Nex/vendor/imgui"
 
  project "Nex"
  location "Nex"
@@ -40,13 +42,15 @@ include "Nex/vendor/Glad"
   "%{prj.name}/Src",
   "%{prj.name}/vendor/spdlog/include",
 	"%{IncludeDir.GLFW}",
-	"%{IncludeDir.Glad}"
+	"%{IncludeDir.Glad}",
+	"%{IncludeDir.ImGui}"
  }
  
  links
  {
    "GLFW",
    "Glad",
+   "ImGui",
 	 "opengl32.lib"
  }
 

@@ -4,6 +4,7 @@
 #include "Nex/Application.h"
 #include "Nex/Log.h"
 #include "Nex/Layer.h"
+#include "Nex/ImGui/ImGuiLayer.h"
 
 //=======================
 // Entry Point

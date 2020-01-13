@@ -7,8 +7,14 @@
     <Filter Include="Nex\Events">
       <UniqueIdentifier>{142250F0-00DA-913D-69E1-6A9955B82C2E}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Nex\ImGui">
+      <UniqueIdentifier>{5AE5542E-C64F-09A5-0F8E-BA4A7B37E7F9}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Plateform">
       <UniqueIdentifier>{CF988A45-3B03-3FBC-8441-F061F0EA1C11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plateform\OpenGL">
+      <UniqueIdentifier>{23634768-0F5C-66BA-388E-4B3F24E645C6}</UniqueIdentifier>
     </Filter>
     <Filter Include="Plateform\Windows">
       <UniqueIdentifier>{09A24FC9-75B8-4D5F-BE2F-D9802A851EE7}</UniqueIdentifier>
@@ -37,6 +43,9 @@
     <ClInclude Include="Src\Nex\Events\MouseEvent.h">
       <Filter>Nex\Events</Filter>
     </ClInclude>
+    <ClInclude Include="Src\Nex\ImGui\ImGuiLayer.h">
+      <Filter>Nex\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="Src\Nex\Layer.h">
       <Filter>Nex</Filter>
     </ClInclude>
@@ -49,6 +58,9 @@
     <ClInclude Include="Src\Nex\Window.h">
       <Filter>Nex</Filter>
     </ClInclude>
+    <ClInclude Include="Src\Plateform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Plateform\OpenGL</Filter>
+    </ClInclude>
     <ClInclude Include="Src\Plateform\Windows\WindowsWindow.h">
       <Filter>Plateform\Windows</Filter>
     </ClInclude>
@@ -58,6 +70,9 @@
     <ClCompile Include="Src\Nex\Application.cpp">
       <Filter>Nex</Filter>
     </ClCompile>
+    <ClCompile Include="Src\Nex\ImGui\ImGuiLayer.cpp">
+      <Filter>Nex\ImGui</Filter>
+    </ClCompile>
     <ClCompile Include="Src\Nex\Layer.cpp">
       <Filter>Nex</Filter>
     </ClCompile>
@@ -66,6 +81,9 @@
     </ClCompile>
     <ClCompile Include="Src\Nex\Log.cpp">
       <Filter>Nex</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Plateform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Plateform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="Src\Plateform\Windows\WindowsWindow.cpp">
       <Filter>Plateform\Windows</Filter>

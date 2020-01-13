@@ -80,7 +80,7 @@
       <PrecompiledHeaderFile>PreH.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>NX_PLATFORM_WINDOWS;NX_BUILD_DLL;GLFW_INCLUDE_NONE;NX_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>Src;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Src;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;vendor\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -103,7 +103,7 @@
       <PrecompiledHeaderFile>PreH.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>NX_PLATFORM_WINDOWS;NX_BUILD_DLL;GLFW_INCLUDE_NONE;NX_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>Src;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Src;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;vendor\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -130,7 +130,7 @@
       <PrecompiledHeaderFile>PreH.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>NX_PLATFORM_WINDOWS;NX_BUILD_DLL;GLFW_INCLUDE_NONE;NX_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>Src;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Src;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;vendor\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -160,18 +160,22 @@
     <ClInclude Include="Src\Nex\Events\Event.h" />
     <ClInclude Include="Src\Nex\Events\KeyEvent.h" />
     <ClInclude Include="Src\Nex\Events\MouseEvent.h" />
+    <ClInclude Include="Src\Nex\ImGui\ImGuiLayer.h" />
     <ClInclude Include="Src\Nex\Layer.h" />
     <ClInclude Include="Src\Nex\LayerStack.h" />
     <ClInclude Include="Src\Nex\Log.h" />
     <ClInclude Include="Src\Nex\Window.h" />
+    <ClInclude Include="Src\Plateform\OpenGL\ImGuiOpenGLRenderer.h" />
     <ClInclude Include="Src\Plateform\Windows\WindowsWindow.h" />
     <ClInclude Include="Src\PreH.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\Nex\Application.cpp" />
+    <ClCompile Include="Src\Nex\ImGui\ImGuiLayer.cpp" />
     <ClCompile Include="Src\Nex\Layer.cpp" />
     <ClCompile Include="Src\Nex\LayerStack.cpp" />
     <ClCompile Include="Src\Nex\Log.cpp" />
+    <ClCompile Include="Src\Plateform\OpenGL\ImGuiOpenGLRenderer.cpp" />
     <ClCompile Include="Src\Plateform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="Src\PreH.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
@@ -183,6 +187,9 @@
     </ProjectReference>
     <ProjectReference Include="vendor\Glad\Glad.vcxproj">
       <Project>{BDD6857C-A90D-870D-52FA-6C103E10030F}</Project>
+    </ProjectReference>
+    <ProjectReference Include="vendor\imgui\ImGui.vcxproj">
+      <Project>{C0FF640D-2C14-8DBE-F595-301E616989EF}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
