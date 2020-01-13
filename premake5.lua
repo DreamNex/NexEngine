@@ -13,8 +13,10 @@
 -- Inlucde directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "Nex/vendor/GLFW/include"
+IncludeDir["Glad"] = "Nex/vendor/Glad/include"
 
 include "Nex/vendor/GLFW"
+include "Nex/vendor/Glad"
 
  project "Nex"
  location "Nex"
@@ -37,12 +39,14 @@ include "Nex/vendor/GLFW"
  {
   "%{prj.name}/Src",
   "%{prj.name}/vendor/spdlog/include",
-	"%{IncludeDir.GLFW}"
+	"%{IncludeDir.GLFW}",
+	"%{IncludeDir.Glad}"
  }
  
  links
  {
    "GLFW",
+   "Glad",
 	 "opengl32.lib"
  }
 
@@ -54,7 +58,8 @@ include "Nex/vendor/GLFW"
   defines
   {
    "NX_PLATFORM_WINDOWS",
-   "NX_BUILD_DLL"
+   "NX_BUILD_DLL",
+   "GLFW_INCLUDE_NONE"
   }
 
   postbuildcommands

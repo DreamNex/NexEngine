@@ -5,6 +5,9 @@
 #include "Nex/Events/MouseEvent.h"
 #include "Nex/Events/KeyEvent.h"
 
+#include <glad/glad.h>
+
+
 namespace Nex
 {
 	static bool s_GLFWInitialized = false;
@@ -44,8 +47,11 @@ namespace Nex
 			glfwSetErrorCallback(GLFWErrorCallback);
 			s_GLFWInitialized = true;
 		}
+
 		m_Window = glfwCreateWindow((int)props.W_Width, (int)props.W_Height, m_Data.Title.c_str(), nullptr, nullptr);
 		glfwMakeContextCurrent(m_Window);
+		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+		NX_CORE_ASSERT(status, "Failed to init GLAD!");
 		glfwSetWindowUserPointer(m_Window, &m_Data);
 		SetVsync(true);
 
