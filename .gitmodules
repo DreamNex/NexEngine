@@ -4,6 +4,4 @@
 [submodule "Nex/vendor/GLFW"]
 	path = Nex/vendor/GLFW
 	url = https://github.com/TheCherno/GLFW
-[submodule "Nex/vendor/imgui"]
-	path = Nex/vendor/imgui
-	url = http://github.com/TheCherno/imgui
+
