@@ -1,9 +1,11 @@
 [submodule "Nex/vendor/spdlog"]
 	path = Nex/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+	ignore = dirty
 [submodule "Nex/vendor/GLFW"]
 	path = Nex/vendor/GLFW
 	url = https://github.com/TheCherno/GLFW
+	ignore = dirty
 [submodule "Nex/vendor/imgui"]
 	path = Nex/vendor/imgui
 	url = https://github.com/TheCherno/imgui
