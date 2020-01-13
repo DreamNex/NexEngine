@@ -1,3 +1,4 @@
+#include "PreH.h"
 #include "Log.h"
 
 namespace Nex

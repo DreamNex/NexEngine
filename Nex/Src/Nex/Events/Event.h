@@ -2,8 +2,6 @@
 
 #include "Nex/Core.h"
 
-#include <string>
-#include <functional>
 
 namespace Nex
 {

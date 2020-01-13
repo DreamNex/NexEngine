@@ -18,6 +18,9 @@
  targetdir ("bin/" .. outputdir .. "/%{prj.name}")
  objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+ pchheader "PreH.h"
+ pchsource "Nex/Src/PreH.cpp"
+
  files
  {
   "%{prj.name}/Src/**.h",
