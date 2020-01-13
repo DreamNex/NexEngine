@@ -7,6 +7,12 @@
     <Filter Include="Nex\Events">
       <UniqueIdentifier>{142250F0-00DA-913D-69E1-6A9955B82C2E}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Plateform">
+      <UniqueIdentifier>{b3ee2c9c-55b3-4d18-a469-7fd376da40e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plateform\Windows">
+      <UniqueIdentifier>{22e423d8-7794-4158-bfb0-5aa33f72b4e3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Src\Nex.h" />
@@ -35,6 +41,12 @@
       <Filter>Nex</Filter>
     </ClInclude>
     <ClInclude Include="Src\PreH.h" />
+    <ClInclude Include="Src\Nex\Window.h">
+      <Filter>Nex</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Plateform\Windows\WindowsWindow.h">
+      <Filter>Plateform\Windows</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\Nex\Application.cpp">
@@ -44,5 +56,8 @@
       <Filter>Nex</Filter>
     </ClCompile>
     <ClCompile Include="Src\PreH.cpp" />
+    <ClCompile Include="Src\Plateform\Windows\WindowsWindow.cpp">
+      <Filter>Plateform\Windows</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
