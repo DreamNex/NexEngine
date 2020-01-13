@@ -83,8 +83,9 @@
       <AdditionalIncludeDirectories>Src;vendor\spdlog\include;vendor\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/MDd %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -157,6 +158,8 @@
     <ClInclude Include="Src\Nex\Events\Event.h" />
     <ClInclude Include="Src\Nex\Events\KeyEvent.h" />
     <ClInclude Include="Src\Nex\Events\MouseEvent.h" />
+    <ClInclude Include="Src\Nex\Layer.h" />
+    <ClInclude Include="Src\Nex\LayerStack.h" />
     <ClInclude Include="Src\Nex\Log.h" />
     <ClInclude Include="Src\Nex\Window.h" />
     <ClInclude Include="Src\Plateform\Windows\WindowsWindow.h" />
@@ -164,6 +167,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\Nex\Application.cpp" />
+    <ClCompile Include="Src\Nex\Layer.cpp" />
+    <ClCompile Include="Src\Nex\LayerStack.cpp" />
     <ClCompile Include="Src\Nex\Log.cpp" />
     <ClCompile Include="Src\Plateform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="Src\PreH.cpp">

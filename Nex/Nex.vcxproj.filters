@@ -47,6 +47,12 @@
     <ClInclude Include="Src\Plateform\Windows\WindowsWindow.h">
       <Filter>Plateform\Windows</Filter>
     </ClInclude>
+    <ClInclude Include="Src\Nex\Layer.h">
+      <Filter>Nex</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Nex\LayerStack.h">
+      <Filter>Nex</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\Nex\Application.cpp">
@@ -58,6 +64,12 @@
     <ClCompile Include="Src\PreH.cpp" />
     <ClCompile Include="Src\Plateform\Windows\WindowsWindow.cpp">
       <Filter>Plateform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Nex\Layer.cpp">
+      <Filter>Nex</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Nex\LayerStack.cpp">
+      <Filter>Nex</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

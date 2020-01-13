@@ -64,14 +64,17 @@ include "Nex/vendor/GLFW"
 
  filter "configurations:Debug"
   defines "NX_DEBUG"
+  buildoptions "/MDd"
   symbols "On"
 
  filter "configurations:Release"
   defines "NX_RELEASE"
+  buildoptions "/MD"
   optimize "On"
 
  filter "configurations:Dist"
   defines "NX_DIST"
+  buildoptions "/MD"
   optimize "On"
 
 project "SandBox"
@@ -111,12 +114,15 @@ project "SandBox"
 
  filter "configurations:Debug"
   defines "NX_DEBUG"
+  buildoptions "/MDd"
   symbols "On"
 
  filter "configurations:Release"
   defines "NX_RELEASE"
+  buildoptions "/MD"
   optimize "On"
 
  filter "configurations:Dist"
   defines "NX_DIST"
+  buildoptions "/MD"
   optimize "On"
