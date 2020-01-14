@@ -17,9 +17,14 @@ IncludeDir["GLFW"] = "Nex/vendor/GLFW/include"
 IncludeDir["Glad"] = "Nex/vendor/Glad/include"
 IncludeDir["ImGui"] = "Nex/vendor/imgui"
 
-include "Nex/vendor/GLFW"
-include "Nex/vendor/Glad"
-include "Nex/vendor/imgui"
+
+
+group "Dependencies"
+	include "Nex/vendor/GLFW"
+	include "Nex/vendor/Glad"
+	include "Nex/vendor/imgui"
+
+group ""
 
  project "Nex"
  location "Nex"
@@ -69,7 +74,7 @@ include "Nex/vendor/imgui"
 
   postbuildcommands
   {
-   ("{COPY} %{cfg.buildtarget.relpath} ../bin/"..outputdir.."/SandBox")
+   ("{COPY} %{cfg.buildtarget.relpath} \"../bin/" .. outputdir .. "/Sandbox/\"")
   }
 
  filter "configurations:Debug"
