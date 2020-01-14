@@ -1,5 +1,6 @@
  workspace "Nex"
  architecture "x64"
+ startproject "SandBox"
 
  configurations
  {
@@ -19,8 +20,6 @@ IncludeDir["ImGui"] = "Nex/vendor/imgui"
 include "Nex/vendor/GLFW"
 include "Nex/vendor/Glad"
 include "Nex/vendor/imgui"
-
-startproject "SandBox"
 
  project "Nex"
  location "Nex"
@@ -75,17 +74,17 @@ startproject "SandBox"
 
  filter "configurations:Debug"
   defines "NX_DEBUG"
-  buildoptions "/MDd"
+  runtime "Debug"
   symbols "On"
 
  filter "configurations:Release"
   defines "NX_RELEASE"
-  buildoptions "/MD"
+  runtime "Release"
   optimize "On"
 
  filter "configurations:Dist"
   defines "NX_DIST"
-  buildoptions "/MD"
+  runtime "Release"
   optimize "On"
 
 project "SandBox"
@@ -125,15 +124,15 @@ project "SandBox"
 
  filter "configurations:Debug"
   defines "NX_DEBUG"
-  buildoptions "/MDd"
+  runtime "Debug"
   symbols "On"
 
  filter "configurations:Release"
   defines "NX_RELEASE"
-  buildoptions "/MD"
+  runtime "Release"
   optimize "On"
 
  filter "configurations:Dist"
   defines "NX_DIST"
-  buildoptions "/MD"
+  runtime "Release"
   optimize "On"
