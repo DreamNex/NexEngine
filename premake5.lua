@@ -20,6 +20,8 @@ include "Nex/vendor/GLFW"
 include "Nex/vendor/Glad"
 include "Nex/vendor/imgui"
 
+startproject "SandBox"
+
  project "Nex"
  location "Nex"
  kind "SharedLib"
