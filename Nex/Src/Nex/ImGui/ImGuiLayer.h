@@ -1,6 +1,9 @@
 #pragma once
 
 #include "Nex/Layer.h"
+#include "Nex/Events/KeyEvent.h"
+#include "Nex/Events/MouseEvent.h"
+#include "Nex/Events/ApplicationEvent.h"
 
 namespace Nex {
 
@@ -14,6 +17,15 @@ namespace Nex {
 		void OnDetach();
 		void OnUpdate();
 		void OnEvent(Event& event);
+	private:
+		bool OnMouseButtonPressedEvent(MouseButtonPressedEvent& e);
+		bool OnMouseButtonReleasedEvent(MouseButtonReleasedEvent& e);
+		bool OnMouseMovedEvent(MouseMovedEvent& e);
+		bool OnMouseScrolledEvent(MouseScrolledEvent& e);
+		bool OnWindowResizedEvent(WindowResizeEvent& e);
+		bool OnKeyTypedEvent(KeyTypedEvent& e);
+		bool OnKeyReleasedEvent(KeyReleasedEvent& e);
+		bool OnKeyPressedEvent(KeyPressedEvent& e);
 	private:
 		float m_Time = 0.0f;
 	};
