@@ -20,6 +20,9 @@ namespace Nex
 		inline void SetEventCallback(const EventCallBackFn& callback) override{ m_Data.EventCallback = callback; }
 		void SetVsync(bool enabled) override;
 		bool isVsync() const override;
+
+		inline virtual void* GetNativeWindow() const { return m_Window; }
+
 	private: 
 		virtual void Init(const WindowProps& props);
 		virtual void Shutdown();

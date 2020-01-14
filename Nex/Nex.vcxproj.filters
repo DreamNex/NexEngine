@@ -65,6 +65,12 @@
       <Filter>Plateform\Windows</Filter>
     </ClInclude>
     <ClInclude Include="Src\PreH.h" />
+    <ClInclude Include="Src\Nex\Input.h">
+      <Filter>Nex</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Plateform\Windows\WindowsInput.h">
+      <Filter>Plateform\Windows</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\Nex\Application.cpp">
@@ -89,5 +95,8 @@
       <Filter>Plateform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="Src\PreH.cpp" />
+    <ClCompile Include="Src\Plateform\Windows\WindowsInput.cpp">
+      <Filter>Plateform\Windows</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
