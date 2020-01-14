@@ -25,6 +25,7 @@ include "Nex/vendor/imgui"
  location "Nex"
  kind "SharedLib"
  language "C++"
+ staticruntime "off"
 
  targetdir ("bin/" .. outputdir .. "/%{prj.name}")
  objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -57,7 +58,6 @@ include "Nex/vendor/imgui"
 
  filter "system:windows"
   cppdialect "C++17"
-  staticruntime "On"
   systemversion "latest"
 
   defines
@@ -91,6 +91,7 @@ project "SandBox"
  location "SandBox"
  kind "ConsoleApp"
  language "C++"
+ staticruntime "off"
 
  targetdir ("bin/" .. outputdir .. "/%{prj.name}")
  objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -114,7 +115,6 @@ project "SandBox"
 
  filter "system:windows"
   cppdialect "C++17"
-  staticruntime "On"
   systemversion "latest"
 
   defines
